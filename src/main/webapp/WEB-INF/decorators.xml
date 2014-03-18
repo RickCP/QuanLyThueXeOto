@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<decorators defaultdir="/WEB-INF/decorators">
+	<excludes>
+		<pattern>/nodecorate/*</pattern>
+		<pattern>/styles/*</pattern>
+		<pattern>/assets/*</pattern>
+		<pattern>/scripts/*</pattern>
+		<pattern>/images/*</pattern>
+		<pattern>/index.html</pattern>
+		<pattern>/META-INF/*</pattern>
+	</excludes>
+
+	<decorator name="layout" page="layout.jsp">
+		<pattern>/*</pattern>
+		<pattern>/js/*</pattern>
+	</decorator>
+
+	<decorator name="index" page="templateIndex.jsp">
+		<pattern>/client</pattern>
+	</decorator>
+
+	<decorator name="fullPage" page="sign_in.jsp">
+		<pattern>/login</pattern>
+		<pattern>/home.htm</pattern>
+		<pattern>/js/registration</pattern>
+		<pattern>/js/registration.htm</pattern>
+		<pattern>/client/registration</pattern>
+		<pattern>/client/registration.htm</pattern>
+		<pattern>/rs</pattern>
+		<pattern>/rs.htm</pattern>
+	</decorator>
+
+	<decorator name="headerFooterOnly" page="headerFooterLayout.jsp">
+		<pattern>/profile/*</pattern>
+	</decorator>
+</decorators>
+
