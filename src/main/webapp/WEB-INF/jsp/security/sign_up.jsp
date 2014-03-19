@@ -20,7 +20,7 @@
 <body>
 	<h2>Sign Up Form</h2>
 
-	<form:form method="POST" commandName="userForm" action="${pageContext.request.contextPath }/register">
+	<form:form method="POST" commandName="userForm" action="${pageContext.request.contextPath }/login/register">
 
 		<form:errors path="*" cssClass="errorblock" element="div" />
 

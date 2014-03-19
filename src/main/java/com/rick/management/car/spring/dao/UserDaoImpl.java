@@ -52,5 +52,9 @@ public class UserDaoImpl implements UserDao {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	public static void main(String[] args) {
+		UserDaoImpl dao =new UserDaoImpl();
+		dao.doLogin("Rick","123456");
+	}
 
 }

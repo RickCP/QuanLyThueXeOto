@@ -1,5 +1,8 @@
 <%@ taglib uri="http://www.opensymphony.com/sitemesh/decorator"
 	prefix="decorator"%>
+<%@ include file="/WEB-INF/jsp/include/taglibs_include.jsp" %>
+<%@ include file="/WEB-INF/jsp/include/server_variables.jsp" %>
+<%@ include file="/WEB-INF/jsp/include/js_variables.jsp" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -14,17 +17,17 @@
     <!--IE Compatibility modes-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="msapplication-TileColor" content="#5bc0de">
-    <meta name="msapplication-TileImage" content="assets/img/metis-tile.png">
+    <meta name="msapplication-TileImage" content="${contextPath}/assets/img/metis-tile.png">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="${contextPath}/assets/lib/bootstrap/css/bootstrap.min.css">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="assets/lib/Font-Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="${contextPath}/assets/lib/Font-Awesome/css/font-awesome.min.css">
 
     <!-- Metis core stylesheet -->
-    <link rel="stylesheet" href="assets/css/main.min.css">
-    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="${contextPath}/assets/css/main.min.css">
+    <link rel="stylesheet" href="${contextPath}/assets/css/theme.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
@@ -36,7 +39,7 @@
 	    <![endif]-->
 
     <!--Modernizr 3.0-->
-    <script src="assets/lib/modernizr-build.min.js"></script>
+    <script src="${contextPath}/assets/lib/modernizr-build.min.js"></script>
   </head>
   <body>
     <div id="wrap">
@@ -54,7 +57,7 @@
               <span class="icon-bar"></span> 
             </button>
             <a href="index.html" class="navbar-brand">
-              <img src="assets/img/logo.png" alt="">
+              <img src="${contextPath}/assets/img/logo.png" alt="">
             </a> 
           </header>
           <div class="topnav">
@@ -101,7 +104,7 @@
           </div>
           <div class="user-wrapper">
             <a class="user-link" href="">
-              <img class="media-object img-thumbnail user-img" alt="User Picture" src="assets/img/user.gif">
+              <img class="media-object img-thumbnail user-img" alt="User Picture" src="${contextPath}/assets/img/user.gif">
               <span class="label label-danger user-label">16</span> 
             </a> 
             <div class="media-body">
@@ -265,7 +268,7 @@
             <div class="col-lg-12">
            
             
-            <a href="${pageContext.request.contextPath }/login">Login</a>
+            <a href="${pageContext.request.contextPath }/login/sign_in.jv">Login</a>
             
 			</div>
           </div>
@@ -284,10 +287,10 @@
 
     <!-- #helpModal -->
     <!-- /.modal --><!-- /#helpModal -->
-    <script src="assets/lib/jquery.min.js"></script>
-    <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/lib/screenfull/screenfull.js"></script>
-    <script src="assets/js/main.min.js"></script>
+    <script src="${contextPath}/assets/lib/jquery.min.js"></script>
+    <script src="${contextPath}/assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="${contextPath}/assets/lib/screenfull/screenfull.js"></script>
+    <script src="${contextPath}/assets/js/main.min.js"></script>
 
     <!--For Demo Only. Not required -->
     

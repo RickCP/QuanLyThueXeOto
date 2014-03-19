@@ -145,7 +145,7 @@
 			// add a function that we can call to hide or toggle the sex specific stuff
 			function hideOrToggleSexSpecificStuff(sex){
 				$("#man,#woman").hide().find(":input").addClass("wizard-ignore").attr("disabled", "disabled"); //wizard-ignore tells the wizard to not touch the input fields
-				if(sex !== undefined && sex !== ""){
+				if((sex !== undefined() ||(sex !== "")){
 					$("#" + sex).fadeIn(1000).find(":input").removeClass("wizard-ignore").removeAttr("disabled");
 				}
 			}

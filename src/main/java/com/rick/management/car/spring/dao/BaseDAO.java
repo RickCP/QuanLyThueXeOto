@@ -9,7 +9,7 @@ public class BaseDAO {
 	protected SessionFactory sessionFactory;
 	
 	protected Session getCurrentSession() {
-		return sessionFactory.getCurrentSession();
+		return sessionFactory.openSession();
 	}
 
 }

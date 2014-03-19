@@ -10,28 +10,16 @@
 		<pattern>/META-INF/*</pattern>
 	</excludes>
 
-	<decorator name="layout" page="layout.jsp">
-		<pattern>/*</pattern>
-		<pattern>/js/*</pattern>
+	<decorator name="managerPage" page="layout.jsp">
+		<pattern>/manager/*</pattern>
 	</decorator>
 
 	<decorator name="index" page="templateIndex.jsp">
-		<pattern>/client</pattern>
+		<pattern>/index/*</pattern>
 	</decorator>
 
-	<decorator name="fullPage" page="sign_in.jsp">
-		<pattern>/login</pattern>
-		<pattern>/home.htm</pattern>
-		<pattern>/js/registration</pattern>
-		<pattern>/js/registration.htm</pattern>
-		<pattern>/client/registration</pattern>
-		<pattern>/client/registration.htm</pattern>
-		<pattern>/rs</pattern>
-		<pattern>/rs.htm</pattern>
-	</decorator>
-
-	<decorator name="headerFooterOnly" page="headerFooterLayout.jsp">
-		<pattern>/profile/*</pattern>
+	<decorator name="loginPage" page="sign_in.jsp">
+		<pattern>/login/*</pattern>
 	</decorator>
 </decorators>
 

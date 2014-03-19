@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ include file="/WEB-INF/jsp/include/taglibs_include.jsp" %>
+<%@ include file="/WEB-INF/jsp/include/server_variables.jsp" %>
+<%@ include file="/WEB-INF/jsp/include/js_variables.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,17 +16,17 @@
 
 <!-- Bootstrap core CSS -->
 <!-- Bootstrap -->
-<link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="${contextPath}/assets/lib/bootstrap/css/bootstrap.min.css">
 
 <!-- Font Awesome -->
 <link rel="stylesheet"
-	href="assets/lib/Font-Awesome/css/font-awesome.min.css">
+	href="${contextPath}/assets/lib/Font-Awesome/css/font-awesome.min.css">
 
 <!-- Metis core stylesheet -->
-<link rel="stylesheet" href="assets/css/main.min.css">
-<link rel="stylesheet" href="assets/css/theme.css">
+<link rel="stylesheet" href="${contextPath}/assets/css/main.min.css">
+<link rel="stylesheet" href="${contextPath}/assets/css/theme.css">
 <!-- Add custom CSS here -->
-<link href="css/shop-homepage.css" rel="stylesheet">
+<link href="${contextPath}/css/shop-homepage.css" rel="stylesheet">
 
 </head>
 
@@ -47,6 +50,7 @@
 					<li><a href="#about">About</a></li>
 					<li><a href="#services">Services</a></li>
 					<li><a href="#contact">Contact</a></li>
+					<li><a href="${contextPath}/login/sign_up.jv">Login System</a></li>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -274,10 +278,10 @@
 	<!-- /.container -->
 
 	<!-- JavaScript -->
-	<script src="assets/lib/jquery.min.js"></script>
-	<script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
-	<script src="assets/lib/screenfull/screenfull.js"></script>
-	<script src="assets/js/main.min.js"></script>
+	<script src="${contextPath}/assets/lib/jquery.min.js"></script>
+	<script src="${contextPath}/assets/lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="${contextPath}/assets/lib/screenfull/screenfull.js"></script>
+	<script src="${contextPath}/assets/js/main.min.js"></script>
 
 </body>
 

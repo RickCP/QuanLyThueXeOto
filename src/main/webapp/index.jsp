@@ -1,4 +1,8 @@
+<%@ include file="/WEB-INF/jsp/include/taglibs_include.jsp" %>
+<%@ include file="/WEB-INF/jsp/include/server_variables.jsp" %>
+<%@ include file="/WEB-INF/jsp/include/js_variables.jsp" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
 <style>
@@ -16,6 +20,6 @@
 </style>
 </head>
 <body>
- <a href="${pageContext.request.contextPath}/login">Send link</a>
+ <c:redirect url="index/client.jv"/>
 </body>
 </html>

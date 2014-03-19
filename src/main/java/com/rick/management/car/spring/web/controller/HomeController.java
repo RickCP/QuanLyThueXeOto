@@ -9,7 +9,7 @@ import com.rick.management.car.spring.constant.WebConstants;
 
 @Controller
 public class HomeController {
-	@RequestMapping(value = "/client", method = RequestMethod.GET)
+	@RequestMapping(value = "/index/client", method = RequestMethod.GET)
 	public ModelAndView doNavigation()
 	{
 		ModelAndView modelAndView=new ModelAndView(WebConstants.Views.CLIENT_INDEX);
